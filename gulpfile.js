@@ -1,6 +1,8 @@
 var gulp = require('gulp'),
     browserify = require('browserify'),
-    source = require('vinyl-source-stream');
+    source = require('vinyl-source-stream'),
+    buffer = require('vinyl-buffer'),
+    uglify = require('gulp-uglify');
 
 gulp.task('build', function () {
 
@@ -9,6 +11,8 @@ gulp.task('build', function () {
         .require('flux', { expose: 'flux' })
         .bundle()
         .pipe(source('bundle.js'))
+        .pipe(buffer())
+        .pipe(uglify())
         .pipe(gulp.dest('./public/dist'));
 
 });
