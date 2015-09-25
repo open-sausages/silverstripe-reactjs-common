@@ -1,0 +1,18 @@
+{
+    "name": "silverstripe/reactjs-common",
+    "description": "Provides common libraries for building ReactJS components in SilverStripe CMS",
+    "type": "silverstripe-module",
+    "require": {
+        "php": ">=5.3.2",
+        "silverstripe/cms": "^3.1",
+        "silverstripe/framework": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^3.7"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
