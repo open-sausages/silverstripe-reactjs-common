@@ -9,6 +9,7 @@ gulp.task('build', function () {
     browserify()
         .require('react', { expose: 'react' })
         .require('flux', { expose: 'flux' })
+        .require('./public/src/jquery', { expose: 'jquery' })
         .bundle()
         .pipe(source('bundle.js'))
         .pipe(buffer())
