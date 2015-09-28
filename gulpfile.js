@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 gulp.task('build', function () {
 
     browserify()
-        .require('react', { expose: 'react' })
+        .require('react/addons', { expose: 'react' })
         .require('flux', { expose: 'flux' })
         .require('./public/src/jquery', { expose: 'jquery' })
         .bundle()
