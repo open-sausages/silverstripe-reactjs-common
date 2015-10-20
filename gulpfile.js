@@ -10,6 +10,7 @@ gulp.task('build', function () {
         .require('react/addons', { expose: 'react' })
         .require('flux', { expose: 'flux' })
         .require('./public/src/jquery', { expose: 'jquery' })
+        .require('./public/src/i18n', { expose: 'i18n' })
         .bundle()
         .pipe(source('bundle.js'))
         .pipe(buffer())
