@@ -1,8 +1,6 @@
 # SilverStripe ReactJS Common
 
-Exposes ReactJS and Flux for use in SilverStripe CMS React Components.
-
-Instead of bundling React a bunch of times, in a bunch of components, include this module and import React from one place.
+ReactJS Common exposes the required libraries and classes for building React components in SilverStripe CMS.
 
 ## Install
 
@@ -14,7 +12,7 @@ $ composer require silverstripe/reactjs-common
 
 Once you have the module installed, React and Flux are available throughout the CMS, and can be accessed through Browserify.
 
-__/yourHipsterComponent/gulpfile.js__
+__./my-component/gulpfile.js__
 
 ```
 
