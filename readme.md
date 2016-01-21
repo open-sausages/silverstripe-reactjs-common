@@ -1,3 +1,5 @@
+DEPRECATED: Do not use this library, it is no longer maintained. Some of these features will be available in SilverStripe core 4.0
+
 # SilverStripe ReactJS Common
 
 ReactJS Common exposes the required libraries and classes for building React components in SilverStripe CMS.
